@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-BAT=$(ls /sys/class/power_supply/BAT* | head -1)
+BAT=$(ls -d /sys/class/power_supply/BAT* | head -1)
 
 battery_percent()
 {
